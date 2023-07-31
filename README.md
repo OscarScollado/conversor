@@ -6,7 +6,7 @@ Para cambiar de una medida a la opuesta simplemente hay que pulsar las dos flech
 
 Esta página web se amoldea a dispositivos desde 320px hasta 1920px.
 
-*Recuerda: antes de ejecutar cualquier versión tienes que irte a esa carpeta y hacer `npm i` para instalar todo lo necesario* (por ejemplo si quieres irte a la versión "conversion api", primero hazte un `cd` ahí y ejecuta el comando).
+*Recuerda: antes de ejecutar cualquier versión tienes que irte a esa carpeta y hacer `npm i` para instalar todo lo necesario* (por ejemplo, si quieres irte a la versión "conversion api", primero hazte un `cd` ahí y ejecuta el comando). También hay que ejecutar el comando en las carpetas `conversion api > api` y `conversion bdd > bdd`.
 
 Esta página tiene tres versiones:
 
@@ -18,7 +18,9 @@ Para iniciar la página se hace `npm start`.
 ## conversor api
 - Además de lo previamente mencionado, esta versión hace uso de una API REST sencilla, haciendo que los datos perduren el cierre del navegador.
 
-Para iniciar la página y el servidor se hace `npm start`. (todo en un comando)
+La API se aloja en localhost:7000 en la ruta `saves`, esta ruta es para hacer peticiones GET y POST, y la ruta `saves/{id}` es para hacer peticiones DELETE con el respectivo id.
+
+Para iniciar la página y el servidor se hace `npm start`. (todo en un comando).
 
 ## conversor bdd
 - Esta versión usa lo anterior y además le agrega una conexión a una base de datos MongoDB, haciendo que los datos perduren el cierre del servidor y aplicación.
